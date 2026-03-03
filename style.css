@@ -6,7 +6,7 @@
   color: black;
 }
 
-/* Define the fade-in animation */
+/* Define the fade-in animation */ 
 @keyframes fadeIn {
   to {
     opacity: 1;
