@@ -1,9 +1,3 @@
-body {
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  margin: 0;
-  padding: 0;
-}
 .smooth-text span {
   opacity: 0; /* Start hidden */
   display: inline-block; /* Allows transformation and spacing */
