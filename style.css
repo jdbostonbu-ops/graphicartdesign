@@ -12,6 +12,7 @@ body {
   color: black;
   position: absolute;
   top: 0;
+  padding: 20px;
 }
 
 /* Define the fade-in animation */ 
