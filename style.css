@@ -4,8 +4,6 @@
   animation: fadeIn 0.5s forwards; /* Apply the fade-in animation */
   background-color: white;
   color: black;
-  position: absolute;
-  top: 0;
 }
 
 /* Define the fade-in animation */ 
