@@ -1,16 +1,17 @@
+body {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  margin: 0;
+  padding: 0;
+}
 .smooth-text span {
   opacity: 0; /* Start hidden */
   display: inline-block; /* Allows transformation and spacing */
   animation: fadeIn 0.5s forwards; /* Apply the fade-in animation */
   background-color: white;
   color: black;
-  text-align: center; /* Centers only the text horizontally */
-  /* other smooth-text styles */
-}
-.parent-container {
-  display: flex; /* Required for justify-content to work */
-  justify-content: center; /* Centers the child div horizontally */
-  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 /* Define the fade-in animation */ 
