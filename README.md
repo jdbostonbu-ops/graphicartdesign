@@ -14,7 +14,7 @@
     <header class="rounded-header"></header>
     <style> 
     h1 {
-      font-size: 58px; /* Or any value you want */
+      font-size: 58px; /* Or any value you want */ 
     }
 
     h2 {
