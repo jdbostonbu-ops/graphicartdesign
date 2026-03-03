@@ -6,7 +6,9 @@
   color: black;
 }
 .parent-container {
+  display: flex; /* Required for justify-content to work */
   justify-content: center; /* Centers the child div horizontally */
+  width: 100%;
 }
 
 /* Define the fade-in animation */ 
