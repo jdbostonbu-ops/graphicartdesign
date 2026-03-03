@@ -1,1 +1,102 @@
 # graphicartdesign
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rounded Header</title>
+    <title>Audio Example</title>
+    <title>GIF with Background</title>
+    
+</head>
+<body>
+    <header class="rounded-header"></header>
+    <style> 
+    h1 {
+      font-size: 58px; /* Or any value you want */
+    }
+
+    h2 {
+      font-size: 38px; /* Or any value you want */
+    }
+
+     h3 {
+        font-size: 20px; /* Or any value you want */
+    }
+
+      h4 {
+        font-size: 15px; /* Or any value you want */
+    }
+
+    p {
+        font-size: 28px; /* Or any value you want */
+    }
+  </style>
+</head>
+<body>
+    
+   <h class="smooth-text">
+  <span>E</span><span>x</span><span>p</span><span>l</span><span>o</span><span>r</span><span>e</span>
+  <span>G</span><span>r</span><span>a</span><span>p</span><span>h</span><span>i</span><span>c</span>
+  <span>A</span><span>r</span><span>t</span><span>s</span>
+  <span>&</span>
+  <span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>!</span>
+   <span>1</span><span>-</span><span>8</span><span>6</span><span>0</span><span>-</span><span>8</span><span>8</span><span>8</span><span>-</span><span>A</span><span>R</span><span>T</span><span>S</span>
+
+
+   
+     <div align="center">
+     <a href="graphics.html"><h1>GRAPHIC ARTS & DESIGN LESSONS</h1></a>
+    <h3>Welcome to graphic arts and design! Join us and explore the world of graphic design and creativity. Whether it is for a business webpage, school project or for personal use, we have something for everyone.<br><br>Our graphic arts and design program is created to help you build skills and learn at your own pace. Learn about design principles, software, and more! Click GRAPHIC ARTS & DESIGN LESSONS above to learn about our rates.</br></h3>
+<a href="https://pixabay.com/"button class ="pill-button"></button><p>CLICK HERE for Animated Design Backgrounds!</p></button></a>
+<h4>
+ <!-- Audio Element: autoplay & muted for browser compatibility -->
+    <audio id="bgMusic" src="ES_User Interface, Alert, Synths, Chord, Ups, Ascend, Notes, Notification - Epidemic Sound.mp3" loop autoplay muted></audio>
+    
+    <!-- Mute/Unmute Button -->
+    <button id="muteBtn">Unmute Audio</button>
+
+    <script>
+        const audio = document.getElementById("bgMusic");
+        const btn = document.getElementById("muteBtn");
+
+        btn.addEventListener("click", function() {
+            if (audio.muted) {
+                audio.muted = false;
+                btn.innerHTML = "Mute Audio";
+            } else {
+                audio.muted = true;
+                btn.innerHTML = "Unmute Audio";
+            }
+        });
+    </script>
+</h4>
+<h1> Upload Your Own Music!
+    <!-- 1. Input for the user to select an audio file -->
+<input type="file" id="audioInput" accept="audio/*">
+
+<!-- 2. Audio player with controls -->
+<h6><audio id="audioPlayer" controls></audio></h6>
+
+<script>
+  const audioInput = document.getElementById('audioInput');
+  const audioPlayer = document.getElementById('audioPlayer');
+
+  // 3. JavaScript to handle the file upload
+  audioInput.addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+      // Create a local object URL for the audio file
+      const objectURL = URL.createObjectURL(file);
+      // Set the audio player source to this URL
+      audioPlayer.src = objectURL;
+      audioPlayer.play(); // Optional: autoplay the file
+    }
+  });
+</script>
+</h1>
+</div>   
+</body>
+
+</html>
