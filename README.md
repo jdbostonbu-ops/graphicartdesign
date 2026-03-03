@@ -1,20 +1,15 @@
 # graphicartdesign
 <!DOCTYPE html>
-<html lang="en">
-<head> 
+<html lang="en"> 
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
-    <title>Rounded Header</title>
-    <title>Audio Example</title>
-    <title>GIF with Background</title>
-      
-</head>
-<body>
-    <header class="rounded-header"></header>
-    <style> 
+    <title>GIF with Background | Rounded Header | Audio Example</title>
+
+<style> 
     h1 {
-      font-size: 58px; /* Or any value you want */ 
+      font-size: 85px; /* Or any value you want */
     }
 
     h2 {
@@ -22,7 +17,7 @@
     }
 
      h3 {
-        font-size: 20px; /* Or any value you want */
+        font-size: 25px; /* Or any value you want */
     }
 
       h4 {
@@ -33,23 +28,24 @@
         font-size: 28px; /* Or any value you want */
     }
   </style>
-</head>
-<body>
+</head> 
+<body> 
+    <header class="rounded-header"></header>
     
-   <h class="smooth-text">
+   <div class="smooth-text">
   <span>E</span><span>x</span><span>p</span><span>l</span><span>o</span><span>r</span><span>e</span>
   <span>G</span><span>r</span><span>a</span><span>p</span><span>h</span><span>i</span><span>c</span>
   <span>A</span><span>r</span><span>t</span><span>s</span>
   <span>&</span>
   <span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>!</span>
    <span>1</span><span>-</span><span>8</span><span>6</span><span>0</span><span>-</span><span>8</span><span>8</span><span>8</span><span>-</span><span>A</span><span>R</span><span>T</span><span>S</span>
-
+   </div>
 
    
-     <div align="center">
+     <div style="text-align: center;">
      <a href="graphics.html"><h1>GRAPHIC ARTS & DESIGN LESSONS</h1></a>
-    <h3>Welcome to graphic arts and design! Join us and explore the world of graphic design and creativity. Whether it is for a business webpage, school project or for personal use, we have something for everyone.<br><br>Our graphic arts and design program is created to help you build skills and learn at your own pace. Learn about design principles, software, and more! Click GRAPHIC ARTS & DESIGN LESSONS above to learn about our rates.</br></h3>
-<a href="https://pixabay.com/"button class ="pill-button"></button><p>CLICK HERE for Animated Design Backgrounds!</p></button></a>
+    <h3>Welcome to graphic arts and design! Join us and explore the world of graphic design and creativity. Whether it is for a business webpage, school project or for personal use, we have something for everyone.<br><br>Our graphic arts and design program is created to help you build skills and learn at your own pace. Learn about design principles, software, and more! Click GRAPHIC ARTS & DESIGN LESSONS above to learn about our rates.</h3>
+<a href="https://pixabay.com/"button class="pill" type="button"><p>CLICK HERE for Animated Design Backgrounds!</p></button></a>
 <h4>
  <!-- Audio Element: autoplay & muted for browser compatibility -->
     <audio id="bgMusic" src="ES_User Interface, Alert, Synths, Chord, Ups, Ascend, Notes, Notification - Epidemic Sound.mp3" loop autoplay muted></audio>
