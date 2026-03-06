@@ -33,30 +33,20 @@
         font-size: 23px;
     }
 
-   button {
+ button {
         background: white;
         color: black;
         border: none;
         padding: 20px;
-        font-size: 50px;
-        width: 50%;
+        font-size: 30px;
+        width: 75%;
         border-radius: 50px;
         margin-bottom: 50px;
         margin-top: 20x;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    }
-        
-   form {
-        background-color: white;
-        color: black;
-        padding: 0px;
-        margin-left: 70px;
-        margin-top: 50px;
-        margin-right: 70px;
-        margin-bottom: 10x;
-        border-radius: 50px;
-        text-align: center;   
-      }  
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+      }
+         
   </style>
     
 </head>
@@ -85,21 +75,27 @@
 </div>
     
 </body>
-    
-<form
-  action="https://formspree.io/f/mqeykdab"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Enter your message:
-    <textarea name="message"></textarea>
-  </label>
-    
-  <button type="submit">&#128072; Click here to submit!</button>
-</form>
+
+<script>
+  function subscribe() {
+    let name = prompt("What is your name?");
+    prompt("What is your email address?");
+    prompt("Leave your message here!");
+
+    alert(`Thanks, ${name}! We will be in touch!
+    Meanwhile, do not forget to check out the Pixabay link!`);
+  }
+
+    let button = document.querySelector("button");
+    button.addEventListener("click", subscribe);
+
+  </script>
+ <script type="text/javascript">
+  (function() {
+    emailjs.init({
+      publicKey: "js7fwwmg017aLwtAa",
+    });
+  })();
+</script>
     
 </html>
