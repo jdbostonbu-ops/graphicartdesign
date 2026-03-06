@@ -70,7 +70,9 @@
 <h1> Upload Your Own Music!
    
 <input type="file" id="audioInput" accept="audio/*">
-<h6><audio id="audioPlayer" controls></audio></h6>
+
+
+<audio id="audioPlayer" controls></audio>
 
 <script>
   const audioInput = document.getElementById('audioInput');
@@ -79,9 +81,11 @@
   audioInput.addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (file) {
+    
       const objectURL = URL.createObjectURL(file);
+      
       audioPlayer.src = objectURL;
-      audioPlayer.play();
+      audioPlayer.play(); 
     }
   });
 </script>
