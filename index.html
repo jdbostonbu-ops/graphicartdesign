@@ -46,10 +46,10 @@
     <h3>Welcome to graphic arts and design! Join us and explore the world of graphic design and creativity. Whether it is for a business webpage, school project or for personal use, we have something for everyone.<br><br>Our graphic arts and design program is created to help you build skills and learn at your own pace. Learn about design principles, software, and more! Click GRAPHIC ARTS & DESIGN LESSONS above to learn about our rates.</h3>
 <a href="https://pixabay.com/"button class="pill" type="button"><p>CLICK HERE to view Pixabay Backgrounds!</p></button></a>
 <h4>
- <!-- Audio Element: autoplay & muted for browser compatibility -->
+
     <audio id="bgMusic" src="ES_User Interface, Alert, Synths, Chord, Ups, Ascend, Notes, Notification - Epidemic Sound.mp3" loop autoplay muted></audio>
     
-    <!-- Mute/Unmute Button -->
+   
     <button id="muteBtn">Unmute Audio</button>
 
     <script>
@@ -68,23 +68,22 @@
     </script>
 </h4>
 <h1> Upload Your Own Music!
-    <!-- 1. Input for the user to select an audio file -->
+   
 <input type="file" id="audioInput" accept="audio/*">
 
-<!-- 2. Audio player with controls -->
+
 <h6><audio id="audioPlayer" controls></audio></h6>
 
 <script>
   const audioInput = document.getElementById('audioInput');
   const audioPlayer = document.getElementById('audioPlayer');
 
-  // 3. JavaScript to handle the file upload
   audioInput.addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (file) {
-      // Create a local object URL for the audio file
+      
       const objectURL = URL.createObjectURL(file);
-      // Set the audio player source to this URL
+     
       audioPlayer.src = objectURL;
       audioPlayer.play(); // Optional: autoplay the file
     }
