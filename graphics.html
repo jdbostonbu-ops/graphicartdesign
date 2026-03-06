@@ -46,6 +46,17 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     }
         
+   form {
+        background-color: white;
+        color: black;
+        padding: 0px;
+        margin-left: 70px;
+        margin-top: 50px;
+        margin-right: 70px;
+        margin-bottom: 10x;
+        border-radius: 50px;
+        text-align: center;   
+      }  
   </style>
     
 </head>
@@ -75,18 +86,20 @@
     
 </body>
     
-  <script>
-    function subscribe() {
-    let name = prompt("What is your name?");
-    prompt("What is your email address?");
-
-    alert(
-        `Thanks, ${name}! We will be in touch!
-        Meanwhile, don't forget to look at Pixabay backgrounds!`);
-        
-    }
-      
-    let button = document.querySelector("button");
-    button.addEventListener("click", subscribe);
-  </script> 
+<form
+  action="https://formspree.io/f/mqeykdab"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Enter your message:
+    <textarea name="message"></textarea>
+  </label>
+    
+  <button type="submit">&#128072; Contact Us Here!</button>
+</form>
+    
 </html>
