@@ -8,23 +8,23 @@
 
 <style> 
     h1 {
-      font-size: 75px; /* Or any value you want */
+      font-size: 75px; 
     }
 
     h2 {
-      font-size: 38px; /* Or any value you want */
+      font-size: 38px; 
     }
 
      h3 {
-        font-size: 23px; /* Or any value you want */
+        font-size: 23px; 
     }
 
       h4 {
-        font-size: 15px; /* Or any value you want */
+        font-size: 15px; 
     }
 
     p {
-        font-size: 28px; /* Or any value you want */
+        font-size: 28px; 
     }
   </style>
 </head> 
@@ -70,7 +70,6 @@
 <h1> Upload Your Own Music!
    
 <input type="file" id="audioInput" accept="audio/*">
-
 <h6><audio id="audioPlayer" controls></audio></h6>
 
 <script>
@@ -80,9 +79,7 @@
   audioInput.addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (file) {
-      
       const objectURL = URL.createObjectURL(file);
-     
       audioPlayer.src = objectURL;
       audioPlayer.play();
     }
