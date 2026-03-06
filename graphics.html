@@ -34,6 +34,16 @@
     h5 {
         font-size: 25px; /* Or any value you want */
     }
+
+    button {
+        background: white;
+        color: black;
+        border: none;
+        padding: 15px;
+        font-size: 40;
+        width: 100%;
+    }
+        
   </style>
 </head>
 <body>
@@ -55,10 +65,25 @@
     <li>Single person: $150/person</li>
     <li>Couples are $250/person</li>
     <li>Groups less than 6 people are $100/person</li><br>
-    <br><li>Email: exploregraphicdesign@graphicdesign.com</br></li>
     </ul>
 </h5>
+    <button>Contact Us Here!</button>
 </div>
+  <script>
+    function subscribe() {
+    let name = prompt("What is your name?");
+    prompt("What is your email address?");
+
+    alert(
+        'Thanks,${name}! We'll be in touch!
+        Meanwhile, don't forget to look at Pixabay backgrounds!'
+        );
+        
+    }
+    let button = document.queryselector(button);
+    button.addEventListener("button", subscribe);
+    
+  </script>      
 </body>
 
 </html>
