@@ -71,7 +71,6 @@
    
 <input type="file" id="audioInput" accept="audio/*">
 
-
 <h6><audio id="audioPlayer" controls></audio></h6>
 
 <script>
@@ -85,7 +84,7 @@
       const objectURL = URL.createObjectURL(file);
      
       audioPlayer.src = objectURL;
-      audioPlayer.play(); // Optional: autoplay the file
+      audioPlayer.play();
     }
   });
 </script>
