@@ -1,98 +1,24 @@
-# graphicartdesign
-<!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="style.css">
-    <title>GIF with Background | Rounded Header | Audio Example</title>
+# 🎨 Graphic Arts & Design Studio #
+An interactive educational platform designed to teach the fundamentals of Graphic Design and Digital Creativity at a self-paced level.
+# 🌟 Project Overview #
+This portal serves as a gateway for aspiring designers to explore design principles, professional software, and creative workflows. Whether for business branding, school projects, or personal artistic expression, the studio provides the tools and information needed to start creating.
+# 🚀 Key Features #
+Curriculum Gateway: Direct link to graphics.html for lesson plans, skill-building modules, and service rates.
+Interactive Music Hub: A custom JavaScript-powered Audio Engine that allows users to upload and play their own background music while they work on designs.
+Resource Integration: Fast-access "Pill" button linking to Pixabay, providing a massive library of royalty-free backgrounds and inspiration.
+Clean UI: A centered, "Studio-First" layout designed to minimize distractions and focus on the creative process.
+# 🛠 Tech Stack #
+HTML5: Semantic structure and media elements.
+CSS3: Custom "Pill" button styling and layout centering.
+JavaScript (ES6):
+File API: Handles local music uploads.
+Object URLs: Dynamically generates paths for the audio player without requiring a server.
+# 📖 How to Use #
+Explore Lessons: Click the header to view the full Graphic Arts curriculum and pricing.
+Find Assets: Use the Pixabay button to source high-quality backgrounds for your projects.
+Set the Mood: Use the "Upload Your Own Music" tool to play your favorite creative playlist directly in the browser.
+# 📁 File Structure #
+index.html: The main creative landing page.
+graphics.html: Detailed lesson plans and rates.
+audioInput: Logic for the custom MP3 player.
 
-<style> 
-    h1 {
-      font-size: 85px; /* Or any value you want */
-    }
-
-    h2 {
-      font-size: 38px; /* Or any value you want */
-    }
-
-     h3 {
-        font-size: 25px; /* Or any value you want */
-    }
-
-      h4 {
-        font-size: 15px; /* Or any value you want */
-    }
-
-    p {
-        font-size: 28px; /* Or any value you want */
-    }
-  </style>
-</head> 
-<body> 
-    <header class="rounded-header"></header>
-    
-   <div class="smooth-text">
-  <span>E</span><span>x</span><span>p</span><span>l</span><span>o</span><span>r</span><span>e</span>
-  <span>G</span><span>r</span><span>a</span><span>p</span><span>h</span><span>i</span><span>c</span>
-  <span>A</span><span>r</span><span>t</span><span>s</span>
-  <span>&</span>
-  <span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>!</span>
-   <span>1</span><span>-</span><span>8</span><span>6</span><span>0</span><span>-</span><span>8</span><span>8</span><span>8</span><span>-</span><span>A</span><span>R</span><span>T</span><span>S</span>
-   </div>
-
-   
-     <div style="text-align: center;">
-     <a href="graphics.html"><h1>GRAPHIC ARTS & DESIGN LESSONS</h1></a>
-    <h3>Welcome to graphic arts and design! Join us and explore the world of graphic design and creativity. Whether it is for a business webpage, school project or for personal use, we have something for everyone.<br><br>Our graphic arts and design program is created to help you build skills and learn at your own pace. Learn about design principles, software, and more! Click GRAPHIC ARTS & DESIGN LESSONS above to learn about our rates.</h3>
-<a href="https://pixabay.com/"button class="pill" type="button"><p>CLICK HERE for Animated Design Backgrounds!</p></button></a>
-<h4>
- <!-- Audio Element: autoplay & muted for browser compatibility -->
-    <audio id="bgMusic" src="ES_User Interface, Alert, Synths, Chord, Ups, Ascend, Notes, Notification - Epidemic Sound.mp3" loop autoplay muted></audio>
-    
-    <!-- Mute/Unmute Button -->
-    <button id="muteBtn">Unmute Audio</button>
-
-    <script>
-        const audio = document.getElementById("bgMusic");
-        const btn = document.getElementById("muteBtn");
-
-        btn.addEventListener("click", function() {
-            if (audio.muted) {
-                audio.muted = false;
-                btn.innerHTML = "Mute Audio";
-            } else {
-                audio.muted = true;
-                btn.innerHTML = "Unmute Audio";
-            }
-        });
-    </script>
-</h4>
-<h1> Upload Your Own Music!
-    <!-- 1. Input for the user to select an audio file -->
-<input type="file" id="audioInput" accept="audio/*">
-
-<!-- 2. Audio player with controls -->
-<h6><audio id="audioPlayer" controls></audio></h6>
-
-<script>
-  const audioInput = document.getElementById('audioInput');
-  const audioPlayer = document.getElementById('audioPlayer');
-
-  // 3. JavaScript to handle the file upload
-  audioInput.addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (file) {
-      // Create a local object URL for the audio file
-      const objectURL = URL.createObjectURL(file);
-      // Set the audio player source to this URL
-      audioPlayer.src = objectURL;
-      audioPlayer.play(); // Optional: autoplay the file
-    }
-  });
-</script>
-</h1>
-</div>   
-</body>
-
-</html>
