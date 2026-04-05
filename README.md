@@ -1,5 +1,8 @@
 # 🎨 Graphic Arts & Design Studio #
 An interactive educational platform designed to teach the fundamentals of Graphic Design and Digital Creativity at a self-paced level.
+## 👤 Author
+**Jacqueline**  
+[Check out my GitHub Profile](https://github.com/jdbostonbu-ops)
 # 🌟 Project Overview #
 This portal serves as a gateway for aspiring designers to explore design principles, professional software, and creative workflows. Whether for business branding, school projects, or personal artistic expression, the studio provides the tools and information needed to start creating.
 # 🚀 Key Features #
